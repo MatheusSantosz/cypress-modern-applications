@@ -1,0 +1,49 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'branch'
+        required: true
+        default: 'main'
+      project:
+        description: 'project'
+        required: false
+        default: 'cypress'
+
+
+jobs:
+  cypress-run:
+    name: Cypress run
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # run 1 copies of the current job in parallel
+        containers: [1]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          record: true
+          parallel: true
+          browser: chrome
+          ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
+          config-file: cypress.json
+        env:
+          # pass the Dashboard record key as an environment variable
+          CYPRESS_RECORD_KEY: "4a372354-d1c4-4001-8111-e724aaef85e1"
+
+      - run: |
+          echo "Projeto: ${{ github.event.inputs.project }}!"
+          echo "Branch: ${{ github.event.inputs.branch }}!"
+ 
