@@ -2,12 +2,12 @@
     "extends":"./base.jason",
     "$schema":  "https://on.cypress.io/cypress.schema.json",
     "baseUrl":"https://barrigarest.wcaquino.me",
-    "projectId": "pcy17v",
+    "projectId": "hx87ks",
     "env":{
         "user": "matheuss-cypress"  
       },
-          "experimentalSourceRewriting": true,
-          "experimentalStudio": true
+          "experimentalSourceRewriting": true
+        
     
 }
 
