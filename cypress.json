@@ -1,3 +1,13 @@
 {
-    "baseUrl": "https://barrigarest.wcaquino.me"
+    "extends":"./base.jason",
+    "$schema":  "https://on.cypress.io/cypress.schema.json",
+    "baseUrl":"https://barrigarest.wcaquino.me",
+    "projectId": "pcy17v",
+    "env":{
+        "user": "matheuss-cypress"  
+      },
+          "experimentalSourceRewriting": true,
+          "experimentalStudio": true
+    
 }
+
