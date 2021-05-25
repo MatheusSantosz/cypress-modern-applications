@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open" : "cypress open",
-    "cy:run": "cypress run"
+      "cypress": "cypress run",
+    "cypress:chrome": "cypress run -b chrome",
+    "cypress:open": "cypress open"
   },
-  "keywords": [],
+  "keywords": [
+  "cypress",
+    "test",
+    "automation",
+    "e2e"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cypress": "^7.3.0"
   }
