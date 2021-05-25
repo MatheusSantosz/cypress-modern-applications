@@ -46,4 +46,3 @@ jobs:
       - run: |
           echo "Projeto: ${{ github.event.inputs.project }}!"
           echo "Branch: ${{ github.event.inputs.branch }}!"
- 
