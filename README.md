@@ -50,7 +50,7 @@ sudo apt install code
 
 
 
- ## como rodar no cli
+ ## Como rodar no cli
 
 Para rodar em cli no modo headless podemos pegar o comando que esta na pasta do nosso projeto file packed.jason e executar o comando 
 cypress run ("cypress": "cypress run") "npx cypress run" e ele executa em linha do comando, 
