@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "cypress": "cypress run",
+    "cypress": "cypress run",
     "cypress:chrome": "cypress run -b chrome",
     "cypress:open": "cypress open"
   },
   "keywords": [
-  "cypress",
+    "cypress",
     "test",
     "automation",
     "e2e"
@@ -18,5 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "cypress": "^7.3.0"
+  },
+  "devDependencies": {
+    "cypress-xpath": "^1.6.2"
   }
 }
