@@ -44,10 +44,6 @@ describe('Should test at a functional level', () => {
         cy.get(loc.MOVIMENTACAO.CONTA).select('Conta para movimentacoes')
         cy.get(loc.MOVIMENTACAO.STATUS).click()
         cy.get(loc.MOVIMENTACAO.BTN_SALVAR).click()
-        
-
-        cy.get(loc.EXTRATO.LINHAS).should('have.length', 7)
-        cy.xpath(loc.EXTRATO.FN_XP_BUSCA_ELEMENTO('Desc', '123')).should('exist')
     })
 
     it('Should get balance', () => {
