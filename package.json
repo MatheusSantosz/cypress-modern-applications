@@ -14,7 +14,7 @@
     "automation",
     "e2e"
   ],
-  "author": "",
+  "author": "Matheus Dos Santos Barbosa",
   "license": "MIT",
   "dependencies": {
     "cypress": "^7.3.0"
