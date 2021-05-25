@@ -4,10 +4,11 @@
 ![c](https://user-images.githubusercontent.com/62854319/119422735-11a64800-bcd8-11eb-8bce-dc441f2acfb3.png)
 
 
-Este projeto foi desenvolvido durante o curso "Testes de aplicações modernas com Cypress", ministrado por "Francisco Wagner Costa Aquino".
+projeto desenvolvido durante o curso "Testes de aplicações modernas com Cypress", fornecido por "Francisco Wagner Costa Aquino", na Udemy.
 
-## Pré-requisitos para utilizar o projeto
-### Possuir um editor de texto (nesse projeto foi utilizado o Visual Studio Code)
+## Para utilizar o projeto
+
+### Possuir um editor de texto (para instalar  o Visual Studio Code)
 
 sudo apt install code
 
@@ -22,14 +23,14 @@ sudo apt install code
     
 
 
-## Para instalar o cypress com uma versão específica que foi feito o teste:
+## Para instalar o cypress na versão específica do projeto:
 
 
     npm install cypress@3.6.0
     
 
 
-## Configurar script no arquivo "package.json" para abrir o cypress:
+## Configurar o arquivo "package.json" para abrir o cypress:
 
 
     "cypress:open": "cypress open"
